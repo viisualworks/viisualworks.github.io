@@ -104,6 +104,54 @@ img.main-logo {
     font-size: 1.2em;
 }
 
+/* ABOUT PAGE */
+h3.our-belief {
+    max-width: 800px;
+    margin: 2em auto;
+    text-align: center;
+    color: var(--brown);
+}
+
+.about-desc-1{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin: 0 4em;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.about-desc-1>div, .about-desc-2>div {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.about-desc-2{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 4em;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.services h4 {
+    text-align: center;
+    color: var(--dark-grey);
+    margin: 2em 0;
+}
+
+.services>div {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.icons p {
+    font-weight: 600;
+    color: var(--dark-grey);
+}
+
+/* FOOTER */
 .main-separator {
     width: 65%;
     margin: 3em auto;
@@ -127,9 +175,21 @@ img.main-logo {
     font-weight: 600;
 }
 
-
-
 .help h5{
     text-align: center;
     color: var(--dark-grey);
 }
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .about-desc-1>div, .about-desc-2>div {
+        max-width: 100%;
+    }
+    
+  }
+  
