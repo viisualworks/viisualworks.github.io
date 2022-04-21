@@ -57,3 +57,79 @@ img.main-logo {
     font-weight: bold;
     font-size: 1.1rem;
 }
+
+.brief-info {
+    max-width: 850px;
+    margin: 5em 5em 4em 5em;
+}
+
+.brief-info h1, .projects h3{
+    margin-bottom: .7em;
+    color: var(--brown);
+    letter-spacing: -1px;
+}
+
+.brief-info p {
+    font-size: 1.2em;
+}
+
+.projects {
+    margin: 0 5em 0 5em;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em 5em;
+}
+
+.thumbnails a {
+    display: inline-block;
+}
+
+.thumbnails div {
+    position: relative;
+}
+
+.thumbnails img {
+    width: 100%;
+}
+
+.thumbnails p {
+    position: absolute;
+    margin: 0;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.main-separator {
+    width: 65%;
+    margin: 3em auto;
+    height: 1px;
+    background-color: var(--brown);
+}
+
+.help {
+    margin-bottom: 2em;
+}
+
+.help a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: var(--brown);
+    background-color: #fff;
+    width: 170px;
+    padding: 14px 0;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+
+
+.help h5{
+    text-align: center;
+    color: var(--dark-grey);
+}
