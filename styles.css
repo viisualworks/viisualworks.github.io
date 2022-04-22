@@ -105,7 +105,7 @@ img.main-logo {
 }
 
 /* ABOUT PAGE */
-h3.our-belief {
+h3.our-belief, h3.reach-out {
     max-width: 800px;
     margin: 2em auto;
     text-align: center;
@@ -151,6 +151,41 @@ h3.our-belief {
     color: var(--dark-grey);
 }
 
+/* CONTACT PAGE */
+p.collab-call {
+    text-align: center;
+    margin-top: -2em;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--dark-grey);
+}
+
+.contact-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3em;
+    align-items: center;
+}
+
+.contact-block>img {
+    place-self: center;
+}
+
+.contact-block>div img {
+    float: left;
+}
+
+.contact-block>div a {
+    display: inline-block;
+    margin: 1.3em;
+    text-decoration: none;
+    color: var(--brown);
+    font-weight: 600;
+    font-size: 1.1em;
+    border-bottom: 2px solid #C97D61;
+    padding-bottom: 0.3em;
+}
+
 /* FOOTER */
 .main-separator {
     width: 65%;
@@ -189,6 +224,10 @@ h3.our-belief {
 
     .about-desc-1>div, .about-desc-2>div {
         max-width: 100%;
+    }
+    
+    .contact-block{
+        justify-items: center;
     }
     
   }
