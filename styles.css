@@ -2,6 +2,7 @@
     --dark-grey: #4d4d4d;
     --cream: #FFE9DC;
     --brown: #A64826;
+    --orange: #cd7a11;
 }
 
 html {
@@ -34,6 +35,12 @@ h4 {
 
 h5 {
     font-size: 1.25rem;
+}
+ a, a:hover{
+     text-decoration: none;
+ }
+img{
+    width: 100%;
 }
 
 header {
@@ -92,7 +99,11 @@ img.main-logo {
 }
 
 .thumbnails img {
-    width: 100%;
+    transition: .3s ease-in-out;
+}
+
+.thumbnails img:hover{
+    filter: sepia(60%);
 }
 
 .thumbnails p {
@@ -149,6 +160,99 @@ h3.our-belief, h3.reach-out {
 .icons p {
     font-weight: 600;
     color: var(--dark-grey);
+}
+
+/* CASE STUDY PAGE */
+.project-header {
+    position: relative;
+    text-align: center;
+    margin: 4em 2em 2em;
+}
+
+.project-header h1{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: #fff;
+}
+
+.project-leads {
+    display: flex;
+    margin: 0 2em;
+    justify-content: space-between;
+}
+
+.project-leads>div {
+    display: inline-flex;
+}
+
+.project-leads p {
+    font-weight: bold;
+}
+
+.project-leads>div p:last-child {
+    margin-left: 1em;
+    color: var(--orange);
+}
+
+.project-leads>div a{
+    display: inline;
+    color: var(--orange);
+    font-weight: bold;
+    margin: 1em 1em;
+}
+
+.project-brief, .project-approach, .graphic-services {
+    max-width: 900px;
+    margin: 2em;
+}
+
+.project-brief h3::after, .project-approach h3::after, .graphic-services h3::after {
+    content: "";
+    display: block;
+    width: 70px;
+    padding-top: 5px;
+    border-bottom: 3px solid #000;
+}
+
+.project-brief p, .project-approach p, .graphic-services p{
+    color: var(--brown);
+    font-weight: 500;
+}
+
+.site-screenshots{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.site-screenshots img {
+    width: auto;
+    object-fit: contain;
+    margin: 2em 0;
+}
+
+.mobile-mockups img {
+    width: auto;
+    display: block;
+    margin: 2em auto;
+}
+
+a.behance-link {
+    color: var(--orange);
+    border-bottom: 3px solid;
+}
+
+.ffa-graphics {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em 2em 4em;
+}
+
+.ffa-graphics img{
+    width: auto;
+    object-fit: contain;
 }
 
 /* CONTACT PAGE */
