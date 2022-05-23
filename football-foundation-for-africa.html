@@ -6,22 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
     <title> Viisualworks- A Digital Creative Studio </title>
 </head>
 
 <body>
     <header>
-        <img src="./assets/logo.svg" alt="the main logo" class="main-logo">
+        <a href="./index.html"><img src="./assets/logo.svg" alt="the main logo" class="main-logo"></a>
         <div class="menu-links">
-            <a href="#">home</a>
+            <a href="./index.html">home</a>
             <a href="./about.html">about</a>
             <a href="./contact.html">contact</a>
         </div>
     </header>
 
     <div class="project-header">
-        <img src="./assets/ffa-header.png" alt="">
-        <h1> Football Foundation For Africa </h1>
+        <a href="http://footballfoundation.africa/" target="_blank">
+            <img src="./assets/ffa-header.png" alt="">
+            <h1> Football Foundation For Africa </h1>
+        </a>
     </div>
 
     <div class="project-leads">
@@ -58,37 +64,31 @@
         <img src="./assets/ffa-sitelayout.jpg" alt="">
     </div>
 
-    <div class="project-approach">
-        <h3> Approach </h3>
-        <p>We had a few back and forth conversations trying to understand the vision of Mr.Wesaala. Before any mockup
-            was created, we had to know which platfrom the site would be under. We chose Wordpress cause of it’s ease
-            of use for us and the client. Then we came up with the brand identity. From colors to font to voice to
-            pictures.
-            All these were critical to know in order to position the FFA in the African football ecosystem</p>
-        <p>After discovering those, we created mockups. Some were rejected, some were accepted. We then proceeded
-            to code the accepted designs</p>
-    </div>
-
     <div class="mobile-mockups">
-        <img src="assets/ffa-mobile-layout.jpg" alt="">
+        <img src="assets/ffa-mobile-layout.png" alt="">
     </div>
 
     <div class="graphic-services">
         <h3> Graphic Services </h3>
-        <p>However, the website was not enough. Mr Brian still had more projects in store and we were tasked with
+        <p>The website was not enough. Mr Brian still had more projects in store and we were tasked with
             creating a consistent visual identity for all FFA ventures from partnership announcements, FFA project
             announcements to most notably, The Africa Football Business Show- an online web series that engages football
-            stakeholders in matters grassroots and international football
-            All these were critical to know in order to position the FFA in the African football ecosystem</p>
-        <p>Sample designs are shown below. More can be seen <a
-                href="https://www.behance.net/gallery/111040359/Poster-Design-ft-The-Football-Foundation-For-Africa"
-                class="behance-link" target="_blank">here</a>
-        </p>
+            stakeholders in matters grassroots and international football </p>
     </div>
 
     <div class="ffa-graphics">
-        <img src="assets/ffa-graphic-1.png" alt="">
-        <img src="assets/ffa-graphic-2.png" alt="">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="grid-item"><img src="assets/ffa-1.jpg" alt=""></div>
+            <div class="grid-item"><img src="assets/ffa-2.jpg" alt=""></div>
+            <div class="grid-item"><img src="assets/ffa-3.jpg" alt=""></div>
+            <div class="grid-item"><img src="assets/ffa-4.jpg" alt=""></div>
+            <div class="grid-item"><img src="assets/ffa-5.jpg" alt=""></div>
+            <div class="grid-item"><img src="assets/ffa-6.png" alt=""></div>
+            <div class="grid-item"><img src="assets/ffa-7.png" alt=""></div>
+            <div class="grid-item"><img src="assets/ffa-8.jpg" alt=""></div>
+            <div class="grid-item"><img src="assets/ffa-9.png" alt=""></div>
+        </div>
     </div>
 
     <div class="main-separator"></div>
@@ -98,6 +98,16 @@
         <a href="#"> CONTACT US </a>
     </div>
 
+    <script>
+        var $grid = $(".grid").imagesLoaded(function () {
+            $grid.masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer',
+                gutter: 10
+            });
+        });
+    </script>
 </body>
 
 </html>
