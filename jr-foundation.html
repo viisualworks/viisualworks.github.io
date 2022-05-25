@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+    <title> Jennifer Riria Foundation:: Viisualworks </title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./assets/logo.svg" alt="the main logo" class="main-logo"></a>
+        <div class="menu-links">
+            <a href="./index.html">home</a>
+            <a href="./about.html">about</a>
+            <a href="./contact.html">contact</a>
+        </div>
+    </header>
+
+    <div class="project-header">
+        <a href="https://unmotheringthewoman.africa" target="_blank">
+            <img src="./assets/jrf-thumbnail-1.jpg" alt="">
+            <h1> Jennifer Riria Foundation </h1>
+        </a>
+    </div>
+
+    <div class="project-leads">
+        <div>
+            <p>Client </p>
+            <p> Jennifer Riria Foundation </p>
+        </div>
+        <div>
+            <p>Studio Partner </p>
+            <p> BC AFRIKA </p>
+        </div>
+        <div>
+            <p>Role </p>
+            <p> WEB DEVELOPER </p>
+        </div>
+        <div>
+            <p>Visit </p>
+            <a href="https://jenniferririafoundation.org" target="_blank"> JENNIFER RIRIA FOUNDATION</a>
+        </div>
+    </div>
+
+    <div class="project-brief">
+        <h3> Brief </h3>
+        <p>The Jennifer Riria Foundation (JRF) was founded in order to intervene for young women and girls living in
+            marginalised areas.
+            Some JRF initiatives include: facilitating underprivileged girls' education, eradicating demeaning cultural
+            practises towards women and encouraging girls' health and wlefare development</p>
+        <p>Recently, JRF moved its focus to working with young women involved in innovation. Therefore, the
+            founder, Dr. Jennifer Riria needed an aesthetic comprhensive website to showcase this shift and also
+            other ventures of the foundation. These ventures include: the annual lioness awards, the youth connerct
+            webinar and more </p>
+        <p> For a non-profit foundation such as JRF, having a stable website shows heavy determination and collaboration
+            to meet their vision. BC Afrika liased with Viisualworks to build the official JRF website </p>
+    </div>
+
+    <div class="site-screenshots">
+        <img src="./assets/jrf-sitelayout.jpg" alt="">
+    </div>
+
+    <div class="mobile-mockups">
+        <img src="assets/jrf-mobile-layout.jpg" alt="">
+    </div>
+
+    <div class="main-separator"></div>
+
+    <div class="help">
+        <h5> How can we help your business or brand? </h5>
+        <a href="./contact.html"> CONTACT US </a>
+    </div>
+
+    <script>
+        var $grid = $(".grid").imagesLoaded(function () {
+            $grid.masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                columnWidth: '.grid-sizer',
+                gutter: 10
+            });
+        });
+    </script>
+</body>
+
+</html>

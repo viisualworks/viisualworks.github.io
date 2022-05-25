@@ -264,13 +264,14 @@ h3.reach-out {
     margin: 2em 0;
 }
 
-.mobile-mockups{
+.mobile-mockups {
     text-align: center;
-    margin: 5em 0;
+    margin: 5em auto;
+    max-width: 800px;
 }
 
 .mobile-mockups img {
-    width: 80%;
+    width: 100%;
     object-fit: contain;
 }
 
