@@ -66,9 +66,12 @@ img.main-logo {
     font-size: 1.1rem;
 }
 
+.home-section, .about-section {
+    margin: 5em 5em 4em 5em;
+}
+
 .brief-info {
     max-width: 850px;
-    margin: 5em 5em 4em 5em;
 }
 
 .brief-info h1,
@@ -80,10 +83,6 @@ img.main-logo {
 
 .brief-info p {
     font-size: 1.2em;
-}
-
-.projects {
-    margin: 0 5em 0 5em;
 }
 
 .thumbnails {
@@ -135,7 +134,6 @@ h3.reach-out {
 .about-desc-1 {
     display: flex;
     flex-wrap: wrap-reverse;
-    margin: 0 4em;
     align-items: center;
     font-size: 1.2em;
 }
@@ -147,10 +145,13 @@ h3.reach-out {
     padding: 1em 0;
 }
 
+.about-desc-1 img {
+    width: 100%;
+}
+
 .about-desc-2 {
     display: flex;
     flex-wrap: wrap;
-    margin: 1em 4em;
     align-items: center;
     font-size: 1.2em;
 }
@@ -308,22 +309,35 @@ p.collab-call {
 
 .contact-block {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     margin: 3em;
     align-items: center;
 }
 
 .contact-block>img {
     place-self: center;
+    max-width: 100%;
 }
 
 .contact-block>div img {
     float: left;
 }
 
+.contact-details>div {
+    margin: 3em 0;
+}
+
+.contact-details p {
+    margin: 0.5em 1em;
+    display: inline-block;
+    font-weight: bold;
+    color: #a64826;
+    font-size: 1.1em;
+}
+
 .contact-block>div a {
     display: inline-block;
-    margin: 1.3em;
+    margin: 0 1.3em;
     text-decoration: none;
     color: var(--brown);
     font-weight: 600;
@@ -367,6 +381,13 @@ p.collab-call {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .home-section, .about-section {
+        margin: 5em 2em 4em 2em;
+    }
+
+    .thumbnails{
+        gap: 2em 2em;
+    }
 
     .about-desc-1>div,
     .about-desc-2>div {
@@ -376,7 +397,6 @@ p.collab-call {
     .contact-block {
         justify-items: center;
     }
-
 }
 
 /* 
@@ -385,6 +405,15 @@ p.collab-call {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .home-section, .about-section {
+        margin: 3em 1em 3em 1em;
+    }
+    
+    .thumbnails{
+        grid-template-columns: 1fr;
+        gap: 2em 2em;
+    }
+
     .project-leads{
         overflow: scroll;
     }
