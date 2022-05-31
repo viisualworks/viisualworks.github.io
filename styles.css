@@ -202,7 +202,7 @@ h3.reach-out {
 .project-leads {
     display: flex;
     margin: 0 2em;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .project-leads>div {
