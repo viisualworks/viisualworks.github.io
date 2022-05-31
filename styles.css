@@ -417,6 +417,7 @@ p.collab-call {
 
     .project-leads{
         overflow: scroll;
+        justify-content: space-between;
     }
 
     .project-leads>div {
