@@ -227,6 +227,7 @@ h3.reach-out {
     color: var(--orange);
     font-weight: bold;
     border-bottom: 3px solid;
+    line-height: 1.5;
 }
 
 .project-brief,
@@ -420,5 +421,9 @@ p.collab-call {
 
     .project-leads>div {
         margin-right: 2em;
+    }
+
+    .project-leads>div>p:first-child {
+        height: 3em;
     }
   }
