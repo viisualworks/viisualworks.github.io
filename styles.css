@@ -66,7 +66,8 @@ img.main-logo {
     font-size: 1.1rem;
 }
 
-.home-section, .about-section {
+.home-section,
+.about-section {
     margin: 5em 5em 4em 5em;
 }
 
@@ -102,15 +103,15 @@ img.main-logo {
 
 .thumbnails img {
     -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
     width: 100%;
 }
 
 .thumbnails img:hover {
-   	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .thumbnails p {
@@ -119,7 +120,6 @@ img.main-logo {
     bottom: 20px;
     left: 20px;
     color: #fff;
-    font-size: 1.2em;
 }
 
 /* ABOUT PAGE */
@@ -187,7 +187,7 @@ h3.reach-out {
     transition: .3s ease-in-out;
 }
 
-.project-header:hover img{
+.project-header:hover img {
     filter: brightness(.5);
 }
 
@@ -286,15 +286,16 @@ a.behance-link {
     margin: 2em 2em 4em;
 }
 
-.ffa-graphics .grid-sizer, .ffa-graphics .grid-item {
+.ffa-graphics .grid-sizer,
+.ffa-graphics .grid-item {
     width: 31%;
 }
 
-.grid-item{
+.grid-item {
     margin-bottom: 10px;
 }
 
-.ffa-graphics img{
+.ffa-graphics img {
     display: block;
     width: 100%;
 }
@@ -377,16 +378,28 @@ p.collab-call {
 }
 
 /* 
+  ##Device = Laptops, Desktops
+*/
+
+@media (min-width: 1025px) {
+    .thumbnails p {
+        font-size: 1.2em;
+    }
+}
+
+/* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .home-section, .about-section {
+
+    .home-section,
+    .about-section {
         margin: 5em 2em 4em 2em;
     }
 
-    .thumbnails{
+    .thumbnails {
         gap: 2em 2em;
     }
 
@@ -406,16 +419,18 @@ p.collab-call {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .home-section, .about-section {
+
+    .home-section,
+    .about-section {
         margin: 3em 1em 3em 1em;
     }
-    
-    .thumbnails{
+
+    .thumbnails {
         grid-template-columns: 1fr;
         gap: 2em 2em;
     }
 
-    .project-leads{
+    .project-leads {
         overflow: scroll;
         justify-content: space-between;
     }
@@ -427,4 +442,4 @@ p.collab-call {
     .project-leads>div>p:first-child {
         height: 3em;
     }
-  }
+}
